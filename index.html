@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here 
+
+      CREATE LOCAL MEMORY STORAGE-->
+      <table class="table">
+        <tbody>
+          <tr class="row">
+            <td class="col-2 time-block hour">9AM</td>
+            <td id = "nineAM" class="col-8"> <textarea id ="userInput1" type=""></textarea></td>
+            <td class="col-2 bg-info text-white saveBtn"><button class="subButton">Save</button></td>
+          </tr>
+          <tr class="row">
+              <td class="col-2 time-block hour">10AM</td>
+              <td id = "tenAM" class="col-8"><textarea id="userInput2" type=""></textarea></td>
+              <td class="col-2 bg-info text-white saveBtn"><button class="subButton2">Save</button></td>
+            </tr>
+          <tr class="row">
+              <td class="col-2 time-block hour">11AM</td>
+              <td id = "elevenAM" class="col-8"><textarea id="userInput3"></textarea></td>
+              <td class="col-2 bg-info text-white saveBtn"><button class="subButton3">Save</button></td>
+            </tr>
+          <tr class="row">
+              <td class="col-2 time-block hour">12PM</td>
+              <td id = "twelvePM" class="col-8"><textarea id="userInput4"></textarea></td>
+              <td class="col-2 bg-info text-white saveBtn"><button class="subButton4">Save</button></td>
+            </tr>
+            <tr class="row">
+                <td class="col-2 time-block hour">1PM</td>
+                <td id = "onePM" class="col-8"><textarea id="userInput"></textarea></td>
+                <td class="col-2 bg-info text-white saveBtn"><button class="subButton5">Save</button></td>
+              </tr>
+              <tr class="row">
+                  <td class="col-2 time-block hour">2PM</td>
+                  <td id = "twoPM" class="col-8"><textarea id="userInput5"></textarea></td>
+                  <td class="col-2 bg-info text-white saveBtn"><button class="subButton6">Save</button></td>
+                </tr>
+              <tr class="row">
+                  <td class="col-2 time-block hour">3PM</td>
+                  <td id = "threePM" class="col-8"><textarea id="userInput6"></textarea></td>
+                  <td class="col-2 bg-info text-white saveBtn"><button class="subButton7">Save</button></td>
+                </tr>
+              <tr class="row">
+                  <td class="col-2 time-block hour">4PM</td>
+                  <td id = "fourPM" class="col-8"><textarea id="userInput7"></textarea></td>
+                  <td class="col-2 bg-info text-white saveBtn"><button class="subButton8">Save</button></td>
+                </tr>
+              <tr class="row">
+                  <td class="col-2 time-block hour">5PM</td>
+                  <td id = "fivePM" class="col-8"><textarea id="userInput8"></textarea></td>
+                  <td class="col-2 bg-info text-white saveBtn"><button class="subButton9">Save</button></td>
+                </tr>
+                          <tr class="row">
+                <td class="col-2 time-block hour">6PM</td>
+                <td id = "sixPM" class="col-8"><textarea id="userInput9"></textarea></td>
+                <td class="col-2 bg-info text-white saveBtn"><button class="subButton10">Save</button></td>
+              </tr>
+              <tr class="row">
+                  <td class="col-2 time-block hour">7PM</td>
+                  <td id = "sevenPM" class="col-8"><textarea id="userInput10"></textarea></td>
+                  <td class="col-2 bg-info text-white saveBtn"><button class="subButton11">Save</button></td>
+                </tr>
+              <tr class="row">
+                  <td class="col-2 time-block hour">8PM</td>
+                  <td id = "eightPM" class="col-8"><textarea id="userInput11"></textarea></td>
+                  <td class="col-2 bg-info text-white saveBtn"><button class="subButton12">Save</button></td>
+                </tr>
+              <tr class="row">
+                  <td class="col-2 time-block hour">9PM</td>
+                  <td id = "ninePM" class="col-8"><textarea id="userInput12"></textarea></td>
+                  <td class="col-2 bg-info text-white saveBtn"><button class="subButton13">Save</button></td>
+                </tr>
+              <tr class="row">
+                  <td class="col-2 time-block hour">10PM</td>
+                  <td id = "tenPM" class="col-8"><textarea id="userInput13"></textarea></td>
+                  <td class="col-2 bg-info text-white saveBtn"><button class="subButton14">Save</button></td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
